@@ -89,7 +89,7 @@ def extract():
 
 
 if __name__=="__main__":
-    app.run(port=6060, debug=True)
+    app.run()
     with open("asserts\\user_messages.csv", "a") as f_object:
         writer_object = writer(f_object)
         writer_object.writerow(field_names)
